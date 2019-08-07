@@ -1,0 +1,13 @@
+@DEL /Q *.aux
+@DEL /Q *.bbl
+@DEL /Q *.blg
+@DEL /Q *.loa
+@DEL /Q *.lof
+@DEL /Q *.log
+@DEL /Q *.lot
+@DEL /Q *.out
+@DEL /Q *.bak
+@DEL /Q *.toc
+@DEL /Q *.synctex.gz
+@DEL /Q *.synctex
+@DEL /Q *.sav

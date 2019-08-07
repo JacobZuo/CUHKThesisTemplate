@@ -1,0 +1,90 @@
+% LaTeX thesis template
+
+\documentclass[12pt,twoside,openright]{report}
+% \usepackage[tableposition = top]{caption}
+\usepackage{fancyhdr}
+\usepackage{amsmath,amssymb}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{threeparttable}
+\usepackage{upgreek}
+\usepackage[UTF8, heading = false, scheme = plain]{ctex}
+\usepackage{cite}
+\usepackage[pdfborder={0 0 0},pdftex]{hyperref}
+\usepackage{float,multicol,epsfig}
+\usepackage{thesis}
+
+% LaTeX 2.09
+% \documentstyle[12pt,amsmath,amssymb,thesis,float,multicol,epsfig]{report}
+
+\restylefloat{figure}
+% \restylefloat{table}
+
+% Include the Copyright, List of Tables and List of Figures
+%\tablestrue
+\figurestrue
+
+% Preamble
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+
+\begin{document}
+\title{Thesis Template of CUHK \\ 香港中文大學畢業論文模板}
+\author{Jacob}
+\degree{1}  % 1 for PhD, 2 for MPhil, 3 for MScbib_thesis
+\dept{Materials Science and Engineering}
+\submitdate{July 2019}
+
+\pagenumbering{roman}
+\pagestyle{empty}
+\titlepge
+\ifcopyright\copyrightpage\fi
+\setcounter{page}{0}
+
+%%%%% Front Matters %%%%%
+\input{Abstract}
+\input{AbstractChinese}
+\input{Acknowlegment}
+
+\newpage
+\cleardoublepage\phantomsection
+\addcontentsline{toc}{chapter}{Contents}
+\tableofcontents
+
+
+\newpage
+\cleardoublepage\phantomsection
+\addcontentsline{toc}{chapter}{List of Figures}
+\iffigures\listoffigures\newpage\fi
+% Remark this line if you do not have table
+%\iftables\listoftables\newpage\fi
+
+\pagenumbering{arabic}
+\pagestyle{headings}
+\setcounter{page}{1}
+
+%%%%% Main Body %%%%%
+% Chapters
+\input{Introduction}
+\input{Chapter2}
+\input{Chapter3}
+
+
+% Appendix
+\clearpage
+\appendix
+\input{Materials}
+
+
+% Bibliography
+\clearpage
+\beforebibliography
+\bibliographystyle{phaip}
+\pagestyle{plain}
+\bibliography{library}
+
+\end{document}

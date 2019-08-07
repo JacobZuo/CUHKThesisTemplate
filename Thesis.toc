@@ -1,0 +1,13 @@
+\contentsline {chapter}{Abstract}{i}{chapter*.1}
+\contentsline {chapter}{摘要}{iii}{chapter*.2}
+\contentsline {chapter}{Acknowledgments}{v}{chapter*.3}
+\contentsline {chapter}{Contents}{vii}{section*.4}
+\contentsline {chapter}{List of Figures}{ix}{section*.6}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Why use LaTex}{1}{section.1.1}
+\contentsline {subsection}{\numberline {1.1.1}LaTex v.s. Word}{1}{subsection.1.1.1}
+\contentsline {section}{\numberline {1.2}How to use LaTex}{1}{section.1.2}
+\contentsline {chapter}{\numberline {2}This is Chapter Two}{3}{chapter.2}
+\contentsline {chapter}{\numberline {3}Conclusion}{5}{chapter.3}
+\contentsline {chapter}{\numberline {A}Materials and Methods}{7}{appendix.A}
+\contentsline {chapter}{Bibliography}{8}{appendix.A}
